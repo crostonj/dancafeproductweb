@@ -31,6 +31,6 @@ export class ProductModule {
    // Diagnostic only: inspect router configuration
   constructor(router: Router) {
     const productDetailsView = createCustomElement(ProductDetailsComponent);
-
+    customElements.define('product-list', productDetailsView);
   }
 }
