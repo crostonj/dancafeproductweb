@@ -10,6 +10,7 @@ import { ProductSearchComponent } from './ProductHome/product-search/product-sea
 import { AppRoutingModule } from './app.routing.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { Router } from '@angular/router';
+import { MyMonitoringService } from 'src/Services/logging/MonitoringService';
 
 
 
@@ -25,10 +26,11 @@ import { Router } from '@angular/router';
       AppRoutingModule,
       ProductHomeModule
    ],
-   providers: [],
+   providers: [
+     MyMonitoringService
+   ],
    bootstrap: [
-      AppComponent,
-      PageNotFoundComponent
+      AppComponent
    ]
 })
 export class AppModule {

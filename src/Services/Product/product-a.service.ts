@@ -19,7 +19,7 @@ export class ProductAService {
   };
 
   constructor(private http: HttpClient) {
-      this.ProductUrl = 'http://localhost:3000/Products';
+      this.ProductUrl = 'http://52.158.214.5:3000/Products';
   }
 
   getProducts(): Observable<InventoryItem[]> {
